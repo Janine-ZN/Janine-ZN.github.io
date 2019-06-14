@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[测个试]]></title>
     <url>%2Ftest%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[#这里做测试测试测试、、、、、、、、、、、、 #more标签以下的内容要点击“阅读全文”才能看见]]></content>
       <categories>
         <category>web前端</category>
       </categories>
