@@ -373,7 +373,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Janine-ZN.github.io/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://Janine-ZN.github.io/dependency/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Janine">
@@ -393,7 +393,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+                <a href="/dependency/" class="post-title-link" itemprop="url">安装依赖</a>
               
             
           </h1>
@@ -418,9 +418,13 @@
                 
               
 
-              <time title="创建时间：2019-06-15 13:44:43" itemprop="dateCreated datePublished" datetime="2019-06-15T13:44:43+08:00">2019-06-15</time>
+              <time title="创建时间：2019-06-15 16:44:25 / 修改时间：17:26:02" itemprop="dateCreated datePublished" datetime="2019-06-15T16:44:25+08:00">2019-06-15</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -436,7 +440,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博客/" itemprop="url" rel="index"><span itemprop="name">博客</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/node/" itemprop="url" rel="index"><span itemprop="name">node</span></a></span>
 
                 
                 
@@ -455,8 +459,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/hello-world/" itemprop="commentCount"></span>
+                <a href="/dependency/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/dependency/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -487,17 +491,18 @@
         
           
             <p>
-              Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post$ hexo new "My New Post"
-More info: Writing
-Run server$ hexo server
-More info
+              一、安装依赖使用 npm install 进行依赖安装。npm install
+最简单的就是npm install，如果想单独安装具体的包，就在后面加上包名。npm install 包名
+此时安装的该包的版本号是最新的，可以在包名后添加指定的版本。npm install 包名@版本号
+安装开发时依赖npm install 包名 --save-devnpm install 包名@版本号 --save-dev
+安装运行时依赖，就是发布后还要依赖的东西npm install 包名 --savenpm install 包名@版本号 --save
+二、package.json在 package.json
               ...
             </p>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/hello-world/#more" rel="contents">
+              <a class="btn" href="/dependency/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -619,7 +624,7 @@ More info
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-06-15 13:44:43" itemprop="dateModified" datetime="2019-06-15T13:44:43+08:00">2019-06-15</time>
+                <time title="修改时间：2019-06-15 16:44:25" itemprop="dateModified" datetime="2019-06-15T16:44:25+08:00">2019-06-15</time>
               
             
           </span>
@@ -811,7 +816,7 @@ More info
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-06-15 13:44:43" itemprop="dateModified" datetime="2019-06-15T13:44:43+08:00">2019-06-15</time>
+                <time title="修改时间：2019-06-15 16:44:25" itemprop="dateModified" datetime="2019-06-15T16:44:25+08:00">2019-06-15</time>
               
             
           </span>
@@ -1018,7 +1023,9 @@ More info
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

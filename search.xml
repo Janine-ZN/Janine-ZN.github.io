@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[安装依赖]]></title>
+    <url>%2Fdependency%2F</url>
+    <content type="text"><![CDATA[一、安装依赖使用 npm install 进行依赖安装。1npm install 最简单的就是npm install，如果想单独安装具体的包，就在后面加上包名。1npm install 包名 此时安装的该包的版本号是最新的，可以在包名后添加指定的版本。1npm install 包名@版本号 安装开发时依赖12npm install 包名 --save-devnpm install 包名@版本号 --save-dev 安装运行时依赖，就是发布后还要依赖的东西12npm install 包名 --savenpm install 包名@版本号 --save 二、package.json在 package.json 文件中有两个重要的属性 dependencies 和 devDependencies dependencies 英文是指依赖的意思。 dependencies: 对应着 –save devDependencies: 对应着 –save-dev 通过 npm install 会将依赖的安装目录放到 node_modules 文件夹下，并且在 package.json中记录。 三、npm install 与 package.json之间的关系package.json 和 package-lock.json 的作用 每次 npm install xxx 会把内容记录到 package.json 文件中，下载的包都会发生变化，为了系统的稳定性考虑，每次执行完 npm install 之后会对应生成 package-lock 文件，该文件记录了上一次安装的具体的版本号。 什么是 package-lock.json 根据官方文档，package-lock.json 是生成的系统当前安装的库的具体来源和版本号，锁定版本。 npm install 发生了什么？ 当执行 npm install 的时候，node 会先从 package.json 文件中读取所有 dependencies/devDependencies 信息，然后根据 dependencies/devDependencies 中的信息与 node_modules 中的模块进行对比，在package.json 文件中没有读取到，就直接下载，node 是从 package.json 文件只读取模块名称，不读取版本信息，而是从 package-lock.json 文件中获取版本号，然后进行下载或者更新。 什么是 npm init –yes？ 当 package.json 与 package-lock.json 都不存在，执行 npm install 时，node 会重新生成 package-lock.json 文件，然后把 node_modules 中的模块信息全部记入 package-lock.json 文件，但不会生成 package.json 文件。但是，你可以通过 npm init –yes 来生成 package.json 文件 在 package.json 文件中手动输入包名和版本号会怎么样？ 在 dependencies/devDependencies 中手动输入包名和版本号，如：”vue-template-compiler”: “^2.6.10”，使用 npm install 安装即可。如果这里不清楚请回到”npm install 发生了什么？” 三、安装淘宝镜像 cnpm如果国内的网络不好，会导致一些依赖下载失败，可以使用国内的淘宝镜像，会方便很多1npm install -g cnpm --registry=https://registry.npm.taobao.org [参考地址] ：https://www.chenqaq.com/2017/12/29/dependencies-devDependencies/]]></content>
       <categories>
-        <category>博客</category>
+        <category>node</category>
       </categories>
+      <tags>
+        <tag>npm</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[测个试]]></title>
