@@ -103,18 +103,17 @@
   </script>
 
 
-  <meta name="description" content="1. Hexo简介 1.1 什么是 Hexo？&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Hexo 是一个快速、简洁且高效的博客框架。[Hexo][2] 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。  2. 系统环境 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;这里博主使用的是win7 64位和Hexo 3.x。在搭建Hexo个人博客之前，需">
-<meta name="keywords" content="hexo">
+  <meta name="description" content="如何添加html元素的事件,有几种方法?  参考：  有三种，分别是通过HTML元素属性、通过DOM对象、 通过W3C监听方式（标准方式）或者IE专属的中间模型添加事件。   通过HTML元素属性  简单说来就是在 html 结构中，给你要添加事件的元素添加一个属性。  属性名为 on + 事件名。  如给 button 元素绑定一个click事件，你就该这么写：1&amp;lt;button oncl">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo 本地部署">
-<meta property="og:url" content="https://Janine-ZN.github.io/Hexo本地部署/index.html">
+<meta property="og:title" content="janine的博客">
+<meta property="og:url" content="https://Janine-ZN.github.io/前端面试题-一-附答案/index.html">
 <meta property="og:site_name" content="Janine&#39;blogs">
-<meta property="og:description" content="1. Hexo简介 1.1 什么是 Hexo？&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Hexo 是一个快速、简洁且高效的博客框架。[Hexo][2] 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。  2. 系统环境 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;这里博主使用的是win7 64位和Hexo 3.x。在搭建Hexo个人博客之前，需">
+<meta property="og:description" content="如何添加html元素的事件,有几种方法?  参考：  有三种，分别是通过HTML元素属性、通过DOM对象、 通过W3C监听方式（标准方式）或者IE专属的中间模型添加事件。   通过HTML元素属性  简单说来就是在 html 结构中，给你要添加事件的元素添加一个属性。  属性名为 on + 事件名。  如给 button 元素绑定一个click事件，你就该这么写：1&amp;lt;button oncl">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-16T03:27:41.294Z">
+<meta property="og:updated_time" content="2019-08-13T23:32:45.696Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo 本地部署">
-<meta name="twitter:description" content="1. Hexo简介 1.1 什么是 Hexo？&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Hexo 是一个快速、简洁且高效的博客框架。[Hexo][2] 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。  2. 系统环境 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;这里博主使用的是win7 64位和Hexo 3.x。在搭建Hexo个人博客之前，需">
+<meta name="twitter:title" content="janine的博客">
+<meta name="twitter:description" content="如何添加html元素的事件,有几种方法?  参考：  有三种，分别是通过HTML元素属性、通过DOM对象、 通过W3C监听方式（标准方式）或者IE专属的中间模型添加事件。   通过HTML元素属性  简单说来就是在 html 结构中，给你要添加事件的元素添加一个属性。  属性名为 on + 事件名。  如给 button 元素绑定一个click事件，你就该这么写：1&amp;lt;button oncl">
 
 
 
@@ -122,7 +121,7 @@
 
   
   
-  <link rel="canonical" href="https://Janine-ZN.github.io/Hexo本地部署/">
+  <link rel="canonical" href="https://Janine-ZN.github.io/前端面试题-一-附答案/">
 
 
 
@@ -132,7 +131,7 @@
   };
 </script>
 
-  <title>Hexo 本地部署 | Janine'blogs</title>
+  <title>janine的博客 | Janine'blogs</title>
   
 
 
@@ -379,12 +378,12 @@
 
   
 
-  <article class="post post-type-categories" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Janine-ZN.github.io/Hexo本地部署/">
+    <link itemprop="mainEntityOfPage" href="https://Janine-ZN.github.io/前端面试题-一-附答案/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Janine">
@@ -401,7 +400,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo 本地部署
+          <h1 class="post-title" itemprop="name headline">janine的博客
 
               
             
@@ -427,24 +426,12 @@
                 
               
 
-              <time title="创建时间：2018-01-31 10:25:12" itemprop="dateCreated datePublished" datetime="2018-01-31T10:25:12+08:00">2018-01-31</time>
+              <time title="创建时间：2019-08-14 07:06:44 / 修改时间：07:32:45" itemprop="dateCreated datePublished" datetime="2019-08-14T07:06:44+08:00">2019-08-14</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-12-16 11:27:41" itemprop="dateModified" datetime="2018-12-16T11:27:41+08:00">2018-12-16</time>
               
             
           </span>
@@ -462,8 +449,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/Hexo本地部署/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/Hexo本地部署/" itemprop="commentCount"></span>
+                <a href="/前端面试题-一-附答案/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/前端面试题-一-附答案/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -498,34 +485,97 @@
       
 
       
-        <h2 id="1-Hexo简介"><a href="#1-Hexo简介" class="headerlink" title="1. Hexo简介"></a>1. Hexo简介</h2><ul>
-<li>1.1 什么是 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>？<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> 是一个快速、简洁且高效的博客框架。[Hexo][2] 使用 <a href="http://www.markdown.cn/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</li>
-</ul>
-<h2 id="2-系统环境"><a href="#2-系统环境" class="headerlink" title="2. 系统环境"></a>2. 系统环境</h2><p> &nbsp;&nbsp;&nbsp;&nbsp;这里博主使用的是win7 64位和Hexo 3.x。在搭建Hexo个人博客之前，需要安装 <code>Node.js</code> 和 <code>git</code> 。</p>
-<p>点击下载：</p>
+        <ol>
+<li>如何添加html元素的事件,有几种方法?</li>
+</ol>
+<p>参考：</p>
+<blockquote>
+<p>有三种，分别是通过HTML元素属性、通过DOM对象、 通过W3C监听方式（标准方式）或者IE专属的中间模型添加事件。</p>
+</blockquote>
 <ul>
-<li><a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a></li>
-<li><a href="https://git-scm.com/" target="_blank" rel="noopener">git</a></li>
-</ul>
-<h2 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3. 安装Hexo"></a>3. 安装Hexo</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;安装好Git之后，打开 <code>git-bash.exe</code> （ 用来输入 shell 命令的，就是后面说的 Git Shell ） ，输入npm命令即可安装。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装时，自动下载最新版本</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"><span class="comment"># 或者使用下面的话</span></span><br><span class="line">npm install -g hexo</span><br><span class="line"><span class="comment"># 两者有什么区别，博主也不是很清楚</span></span><br></pre></td></tr></table></figure>
-<h2 id="4-Hexo初始化配置"><a href="#4-Hexo初始化配置" class="headerlink" title="4. Hexo初始化配置"></a>4. Hexo初始化配置</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;根据自己喜好建立目录（如<code>E:\hexo</code>），这个文件夹将来就作为存放代码的地方，名字可以随便取，进入 <code>Git Shell</code> 切换到该路径下<code>E:\hexo</code>执行以下指令:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line"><span class="comment"># 安装 Hexo 完成后，请执行下列命令，Hexo 将会在 `E:\hexo` 目录下新建所需要的文件。</span></span><br></pre></td></tr></table></figure>
-<p>初始化完成后， <code>E:\hexo</code> 目录下内容如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── scripts</span><br><span class="line">├── source</span><br><span class="line">|      ├── _drafts</span><br><span class="line">|      └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
-<p>文件目录解释：</p>
+<li><p>通过HTML元素属性</p>
 <ul>
-<li>_config.yml 文件是网站的配置文件，可以在其中配置网站的大部分参数。</li>
-<li>package.json 文件是应用程序的信息。</li>
-<li>source 是资源文件夹，是用来存放用户资源的地方。</li>
-<li>themes 是主题文件夹，Hexo会根据主题来生成不同的静态页面。</li>
-<li>scaffolds是模板件夹，当新建文章的时候，Hexo会根据模板来建立文件。</li>
+<li>简单说来就是在 html 结构中，给你要添加事件的元素添加一个<strong>属性</strong>。 </li>
+<li>属性名为 on + 事件名。 </li>
+<li>如给 button 元素绑定一个click事件，你就该这么写：<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"方法名"</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<p>新版本的 <code>source</code> 文件夹下只有 <code>_posts</code> ,没有 <code>_drafts</code> ! 不要惊慌！！！</p>
-<h2 id="5-安装Hexo插件"><a href="#5-安装Hexo插件" class="headerlink" title="5. 安装Hexo插件"></a>5. 安装Hexo插件</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;安装 <code>Hexo</code> 所需的各种插件插件，以后会一一介绍。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-archive --save</span><br><span class="line">npm install hexo-generator-category --save</span><br><span class="line">npm install hexo-generator-tag --save</span><br><span class="line">npm install hexo-server --save</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install hexo-deployer-heroku --save</span><br><span class="line">npm install hexo-deployer-rsync --save</span><br><span class="line">npm install hexo-deployer-openshift --save</span><br><span class="line">npm install hexo-renderer-marked@0.2 --save</span><br><span class="line">npm install hexo-renderer-stylus@0.2 --save</span><br><span class="line">npm install hexo-generator-feed@1 --save</span><br><span class="line">npm install hexo-generator-sitemap@1 --save</span><br></pre></td></tr></table></figure>
-<h2 id="6-本地查看效果"><a href="#6-本地查看效果" class="headerlink" title="6. 本地查看效果"></a>6. 本地查看效果</h2><p>继续执行以下命令，成功后可登录localhost:4000查看效果。至此，hexo的本地部署已经完成。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>通过 DOM 对象属性。 </p>
+<ul>
+<li>所有的 html 元素在 DOM(文档对象类型)里都存在一个相应的 DOM 元素。 </li>
+<li>给这个 DOM 元素添加事件: on + 事件名 </li>
+</ul>
+</li>
+</ul>
+<p>html结构:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"name"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>js：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'name'</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; ... &#125;</span><br></pre></td></tr></table></figure></p>
+<ol start="3">
+<li>通过 W3C 监听方式（标准方式）或者IE专属的中间模型添加事件</li>
+</ol>
+<ul>
+<li><p>W3C方式: </p>
+<ul>
+<li>elemennt.addEventListener(事件名,处理函数引用,true || false) </li>
+<li>这里的事件名就是单纯的事件名，不需要加 on，true 表示在事件传播阶段捕获事件，false 表示在事件冒泡阶段捕获事件，一般我们设为false!</li>
+</ul>
+</li>
+<li><p>IE模式: </p>
+<ul>
+<li>element.attachEvent( ‘on’ + 事件名, 处理函数引用); </li>
+<li>注意，IE模式需要加on</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ol start="2">
+<li><p>innerText 和 innerHTML的区别?</p>
+</li>
+<li><p>js的基础对象有那些, window和document的常用的方法和属性列出来</p>
+</li>
+<li><p>前端开发的优化问题</p>
+</li>
+<li><p>如何控制网页在网络传输过程中的数据量</p>
+</li>
+<li><p>JS的本地对象、内置对象、宿主对象分别写出几个</p>
+</li>
+<li><p>document.load和document.ready的区别</p>
+</li>
+<li><p>简述border:none 以及 border:0 的区别，并给出使用建议</p>
+</li>
+<li><p>指出 {}+[] 与 []+{}的值,为什么?</p>
+</li>
+<li><p>form 中的 input 可以设置为 readonly 和 disable，请问两者有什么区别？</p>
+</li>
+<li><p>在JavaScript程序中，获得一个元素并将其隐藏，有哪两种设置其style属性的方法？并说出区别</p>
+</li>
+<li><p>firefox 嵌套 div 标签的居中问题的解决方法，假定有如下情况：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"a"</span>&gt;</span>??? <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"b"</span>&gt;</span> <span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>如果要实现b在a中居中放置，要如何实现</p>
+<ol start="13">
+<li><p>简述一下Ajax的工作原理。</p>
+</li>
+<li><p>JavaScript中获取某个元素有哪几种方式？</p>
+</li>
+<li><p>CSS+DIV开发Web页面的优势有哪些？</p>
+</li>
+<li><p>在HTML页面布局中，position的值有哪几种？默认值又是什么？</p>
+</li>
+<li><p>JavaScript中的数据类型有几种？分别是什么？</p>
+</li>
+<li><p>Html里一些标签里面不能放区块元素</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>  <span class="comment">&lt;!--语义上的限制：p中不能添加区块元素--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>解决方法是什么？</p>
+<ol start="19">
+<li><p>Number() 和 parseInt()的区别</p>
+</li>
+<li><p>XHTML1.0对HTML4.0的改进</p>
+</li>
+</ol>
 
       
     </div>
@@ -589,12 +639,6 @@
 	</div>
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
-          
-        </div>
-      
 
       
       
@@ -604,15 +648,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/Angular表单验证/" rel="next" title="janine的博客">
+                <i class="fa fa-chevron-left"></i> janine的博客
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/Hexo相关命令/" rel="prev" title="Hexo 相关命令">
-                Hexo 相关命令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -660,17 +704,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -814,23 +849,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Hexo简介"><span class="nav-number">1.</span> <span class="nav-text">1. Hexo简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-系统环境"><span class="nav-number">2.</span> <span class="nav-text">2. 系统环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-安装Hexo"><span class="nav-number">3.</span> <span class="nav-text">3. 安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Hexo初始化配置"><span class="nav-number">4.</span> <span class="nav-text">4. Hexo初始化配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-安装Hexo插件"><span class="nav-number">5.</span> <span class="nav-text">5. 安装Hexo插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-本地查看效果"><span class="nav-number">6.</span> <span class="nav-text">6. 本地查看效果</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       

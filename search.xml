@@ -2,7 +2,12 @@
 <search>
   <entry>
     <title><![CDATA[janine的博客]]></title>
-    <url>%2F%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E9%98%BF%E9%87%8C%E5%9B%BE%E6%A0%87%2F</url>
+    <url>%2F%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98-%E4%B8%80-%E9%99%84%E7%AD%94%E6%A1%88%2F</url>
+    <content type="text"><![CDATA[如何添加html元素的事件,有几种方法? 参考： 有三种，分别是通过HTML元素属性、通过DOM对象、 通过W3C监听方式（标准方式）或者IE专属的中间模型添加事件。 通过HTML元素属性 简单说来就是在 html 结构中，给你要添加事件的元素添加一个属性。 属性名为 on + 事件名。 如给 button 元素绑定一个click事件，你就该这么写：1&lt;button onclick="方法名"&gt;&lt;/button&gt; 通过 DOM 对象属性。 所有的 html 元素在 DOM(文档对象类型)里都存在一个相应的 DOM 元素。 给这个 DOM 元素添加事件: on + 事件名 html结构:1&lt;div id="name"&gt;&lt;/div&gt; js：1document.getElementById('name').onclick = function()&#123; ... &#125; 通过 W3C 监听方式（标准方式）或者IE专属的中间模型添加事件 W3C方式: elemennt.addEventListener(事件名,处理函数引用,true || false) 这里的事件名就是单纯的事件名，不需要加 on，true 表示在事件传播阶段捕获事件，false 表示在事件冒泡阶段捕获事件，一般我们设为false! IE模式: element.attachEvent( ‘on’ + 事件名, 处理函数引用); 注意，IE模式需要加on innerText 和 innerHTML的区别? js的基础对象有那些, window和document的常用的方法和属性列出来 前端开发的优化问题 如何控制网页在网络传输过程中的数据量 JS的本地对象、内置对象、宿主对象分别写出几个 document.load和document.ready的区别 简述border:none 以及 border:0 的区别，并给出使用建议 指出 {}+[] 与 []+{}的值,为什么? form 中的 input 可以设置为 readonly 和 disable，请问两者有什么区别？ 在JavaScript程序中，获得一个元素并将其隐藏，有哪两种设置其style属性的方法？并说出区别 firefox 嵌套 div 标签的居中问题的解决方法，假定有如下情况： 1&lt;div id="a"&gt;??? &lt;div id="b"&gt; &lt;/div&gt;&lt;/div&gt; 如果要实现b在a中居中放置，要如何实现 简述一下Ajax的工作原理。 JavaScript中获取某个元素有哪几种方式？ CSS+DIV开发Web页面的优势有哪些？ 在HTML页面布局中，position的值有哪几种？默认值又是什么？ JavaScript中的数据类型有几种？分别是什么？ Html里一些标签里面不能放区块元素 123&lt;p&gt;&lt;div&gt;&lt;/div&gt; &lt;!--语义上的限制：p中不能添加区块元素--&gt;&lt;/p&gt; 解决方法是什么？ Number() 和 parseInt()的区别 XHTML1.0对HTML4.0的改进]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[janine的博客]]></title>
+    <url>%2FAngular%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%2F</url>
     <content type="text"></content>
   </entry>
   <entry>
