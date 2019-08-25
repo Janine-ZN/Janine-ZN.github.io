@@ -103,18 +103,18 @@
   </script>
 
 
-  <meta name="description" content="严于律己，宽以待人">
+  <meta name="description" content="一、问题如何对下面的数组进行去重： 1var arr = [1, 2, 2, 2, 3, 3, 3, 4, 5, 6]; 二、概念解析 indexOf(): 找到就返回下标，找不到就返回-1 filter(): 数组过滤方法，复制出原数组中符合条件的元素组成新数组返回。  123var subArr=arr.filter(function(elem,i,arr)&amp;#123;  return 判断条">
 <meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数组去重">
 <meta property="og:url" content="https://Janine-ZN.github.io/数组去重/index.html">
 <meta property="og:site_name" content="Janine&#39;blogs">
-<meta property="og:description" content="严于律己，宽以待人">
+<meta property="og:description" content="一、问题如何对下面的数组进行去重： 1var arr = [1, 2, 2, 2, 3, 3, 3, 4, 5, 6]; 二、概念解析 indexOf(): 找到就返回下标，找不到就返回-1 filter(): 数组过滤方法，复制出原数组中符合条件的元素组成新数组返回。  123var subArr=arr.filter(function(elem,i,arr)&amp;#123;  return 判断条">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-25T12:08:17.036Z">
+<meta property="og:updated_time" content="2019-08-25T13:13:13.402Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数组去重">
-<meta name="twitter:description" content="严于律己，宽以待人">
+<meta name="twitter:description" content="一、问题如何对下面的数组进行去重： 1var arr = [1, 2, 2, 2, 3, 3, 3, 4, 5, 6]; 二、概念解析 indexOf(): 找到就返回下标，找不到就返回-1 filter(): 数组过滤方法，复制出原数组中符合条件的元素组成新数组返回。  123var subArr=arr.filter(function(elem,i,arr)&amp;#123;  return 判断条">
 
 
 
@@ -427,7 +427,7 @@
                 
               
 
-              <time title="创建时间：2019-08-25 20:04:19 / 修改时间：20:08:17" itemprop="dateCreated datePublished" datetime="2019-08-25T20:04:19+08:00">2019-08-25</time>
+              <time title="创建时间：2019-08-25 20:04:19 / 修改时间：21:13:13" itemprop="dateCreated datePublished" datetime="2019-08-25T20:04:19+08:00">2019-08-25</time>
             
 
             
@@ -486,7 +486,20 @@
       
 
       
-        
+        <h2 id="一、问题"><a href="#一、问题" class="headerlink" title="一、问题"></a>一、问题</h2><p>如何对下面的数组进行去重：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>];</span><br></pre></td></tr></table></figure>
+<h2 id="二、概念解析"><a href="#二、概念解析" class="headerlink" title="二、概念解析"></a>二、概念解析</h2><ul>
+<li>indexOf(): 找到就返回下标，找不到就返回-1</li>
+<li>filter(): 数组过滤方法，复制出原数组中符合条件的元素组成新数组返回。  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> subArr=arr.filter(<span class="function"><span class="keyword">function</span>(<span class="params">elem,i,arr</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> 判断条件</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="es5四种方式"><a href="#es5四种方式" class="headerlink" title="es5四种方式:"></a>es5四种方式:</h2><h4 id="方式一"><a href="#方式一" class="headerlink" title="方式一:"></a>方式一:</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.prototype.unique_one = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 1. 定义临时数组</span></span><br><span class="line">    <span class="keyword">var</span> temp = [];</span><br><span class="line">    <span class="comment">// 2. 遍历当前数组</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="keyword">this</span>.length; i++) &#123;</span><br><span class="line">        <span class="comment">// 3.如果当前数组的第i已经保存进了临时数组，</span></span><br><span class="line">        <span class="comment">// 那么跳过,否则把当前项push到临时数组里面</span></span><br><span class="line">        <span class="keyword">if</span> (temp.indexOf(<span class="keyword">this</span>[i]) === <span class="number">-1</span>) &#123;</span><br><span class="line">            temp.push(<span class="keyword">this</span>[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> temp;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"unique_one==&gt;"</span>, arr.unique_one());</span><br></pre></td></tr></table></figure>
+<p>// 方式二:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.prototype.unique_two = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">//1. hash为hash表，temp为临时数组</span></span><br><span class="line">    <span class="keyword">var</span> hash = &#123;&#125;, temp = [];</span><br><span class="line">    <span class="comment">// 2.遍历当前数组</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="keyword">this</span>.length; i++) &#123;</span><br><span class="line">        <span class="comment">// 3. 如果hash表中没有当前项</span></span><br><span class="line">        <span class="keyword">if</span> (!hash[<span class="keyword">this</span>[i]]) &#123;</span><br><span class="line">            <span class="comment">// 4.存入hash表</span></span><br><span class="line">            hash[<span class="keyword">this</span>[i]] = <span class="literal">true</span>;</span><br><span class="line">            <span class="comment">// 5.把当前数组的当前项</span></span><br><span class="line">            <span class="comment">// push到临时数组里面</span></span><br><span class="line">            temp.push(<span class="keyword">this</span>[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> temp;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"unique_two==&gt;"</span>, arr.unique_two());</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr_str = [<span class="string">"h"</span>, <span class="string">"e"</span>, <span class="string">"l"</span>, <span class="string">"l"</span>, <span class="string">"o"</span>];</span><br><span class="line"><span class="comment">// 方式三:</span></span><br><span class="line"><span class="built_in">Array</span>.prototype.unique_three = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> n = [<span class="keyword">this</span>[<span class="number">0</span>]];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; <span class="keyword">this</span>.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.indexOf(<span class="keyword">this</span>[i]) === i) &#123;</span><br><span class="line">            n.push(<span class="keyword">this</span>[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> n;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"unique_three==&gt;"</span>, arr_str.unique_three());</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 方式四:</span></span><br><span class="line"><span class="built_in">Array</span>.prototype.unique_four = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.sort();</span><br><span class="line">    <span class="keyword">var</span> re = [<span class="keyword">this</span>[<span class="number">0</span>]];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; <span class="keyword">this</span>.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>[i] !== re[re.length - <span class="number">1</span>]) &#123;</span><br><span class="line">            re.push(<span class="keyword">this</span>[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> re;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"unique_four==&gt;"</span>, arr.unique_four());</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.prototype.unique_five = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> res = <span class="keyword">this</span>.filter(<span class="function">(<span class="params">item, index</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.indexOf(item) === index;</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"unique_five==&gt;"</span>, arr.unique_five());</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// es6实现方式:</span></span><br><span class="line"><span class="built_in">Array</span>.prototype.unique = <span class="built_in">Array</span>.prototype.unique || <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> [...new <span class="built_in">Set</span>(<span class="keyword">this</span>)];</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">/** 方法一：使用 ES6 语法中的 Set——数据集合 **/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> <span class="keyword">set</span> = new Set(arr);</span><br><span class="line">    return <span class="keyword">set</span>;</span><br><span class="line">&#125;</span><br><span class="line">var result1 = fun1();</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(arr.unique);</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -564,8 +577,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Angular-6-breadcream-面包屑/" rel="next" title="Angular 6 breadcream 面包屑">
-                <i class="fa fa-chevron-left"></i> Angular 6 breadcream 面包屑
+              <a href="/Angular-6-breadcream-面包屑/" rel="next" title="Angular6 breadcream 面包屑">
+                <i class="fa fa-chevron-left"></i> Angular6 breadcream 面包屑
               </a>
             
           </div>
@@ -620,8 +633,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -768,6 +790,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、问题"><span class="nav-number">1.</span> <span class="nav-text">一、问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、概念解析"><span class="nav-number">2.</span> <span class="nav-text">二、概念解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#es5四种方式"><span class="nav-number">3.</span> <span class="nav-text">es5四种方式:</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方式一"><span class="nav-number">3.0.1.</span> <span class="nav-text">方式一:</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -785,7 +824,7 @@
         <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共9.5k字</span>
+  <span class="post-count">博客全站共10k字</span>
 </div>
 <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
